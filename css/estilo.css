@@ -89,3 +89,75 @@ body{
 .not-account{
     color: #A0A0A0;
 }
+
+.link-blue{
+    color: #0095f6;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get-app{
+    font-size: 1.286rem;
+    font-weight: bold;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* Usa o espaço restante no pai fazendo uma média de espaçamento e divide
+    esses elementos entre os elementos filhos */
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('../img/apple-button.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('../img/googleplay-button.png');
+}
+
+/* responsividade */
+@media (max-width: 1024px){
+    .wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #FFF;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+
+    .phone{
+        display: none;
+    }
+
+    .continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 0.071rem solid;
+    }
+}
+
